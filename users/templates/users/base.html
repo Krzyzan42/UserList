@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css\style.css' %}">
+  <title>
+    {% block title %}Userlist{%endblock%}
+  </title>
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+      <a class="logo" href="{% url 'home' %}">
+        <h1>User <span class="primary-color">List</span></h1>
+      </a>
+      <div class="header-left">
+        {% if user.is_authenticated %}
+        <a href="{% url 'profile' user.username %}" class="btn">Profile</a>
+        <a href="{% url 'logout' %}" class="btn">Logout</a>
+        {% else %}
+        <a href="{% url 'login' %}" class="btn">Log In</a>
+        <a href="{% url 'register' %}" class="btn">Register</a>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+
+  {% block messages %}
+  {% if messages %}
+  <div class="container messages">
+    {% for message in messages %}
+    <div class="msg msg-{{ message.tags }}">{{ message }}</div>
+    {% endfor %}
+  </div>
+
+  {% endif %}
+  {% endblock %}
+
+  {% block content %} {% endblock %}
+
+</body>
+
+</html>

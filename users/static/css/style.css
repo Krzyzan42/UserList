@@ -1,0 +1,242 @@
+/* GLOBALS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* UTILS */
+.container {
+  max-width: 1100px;
+  padding: 0px 20px;
+  margin: auto;
+}
+
+.primary-color {
+  color: coral;
+}
+
+.btn {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  padding: 15px 30px;
+  background: #111;
+  border: none;
+  border-radius: 0%;
+}
+
+.btn:hover {
+  color: coral;
+  background: #444;
+}
+
+.btn-primary {
+  background: #d15528;
+}
+
+.btn-primary:hover {
+  background: #a13e19;
+  color: #fff;
+}
+
+.clr {
+  clear: both;
+}
+
+.form-minor {
+  font-size: 1.3rem;
+}
+
+.form-minor input {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 7px 5px;
+  min-width: 400px;
+  background: #222;
+  border: #666 solid 1px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.form-minor input:focus {
+  border-color: coral;
+  outline: none;
+}
+
+.form-minor .errorlist {
+  list-style: none;
+  font-size: 1rem;
+  color: #f24c4c;
+}
+
+.form-major {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px 60px;
+  border: coral solid 1px;
+  border-radius: 15px;
+}
+
+.form-major h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.form-major>div {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.form-major input {
+  display: block;
+  padding: 7px 5px;
+  min-width: 400px;
+  background: #222;
+  border: #666 solid 1px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.form-major input:focus {
+  border-color: coral;
+  outline: none;
+}
+
+.form-major ul {
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+.form-major .errorlist {
+  color: #f24c4c;
+  font-size: 0.8rem;
+}
+
+
+.form-major .btn {
+  margin-top: 30px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HEADER */
+#header {
+  height: 80px;
+  background: #111;
+}
+
+#header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header .logo {
+  display: block;
+  padding: 15px 0px;
+}
+
+#header a {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  font-size: 18px;
+}
+
+#header .header-left {
+  display: flex;
+}
+
+/* MESSAGES */
+.messages {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.msg {
+  padding: 20px;
+  border: #111 solid 2px;
+  border-radius: 8px;
+}
+
+.msg-success {
+  border-color: #39af16;
+  background: #82d26a68;
+}
+
+.msg-error {
+  border-color: #af1616;
+  background: #d26a6a68;
+}
+
+/* USER LIST */
+#user-list h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 30px 0px;
+  border-bottom: coral solid 1px;
+}
+
+#user-list .user_block {
+  font-size: 18px;
+  border-bottom: #444 solid 1px;
+  padding: 10px 0px;
+}
+
+/* LOGOUT */
+#logout-message {
+  padding: 40px 20px;
+}
+
+/* PROFILE */
+#profile-header {
+  margin: 30px 0px;
+  padding-bottom: 10px;
+  border-bottom: coral solid 1px;
+}
+
+#profile-header h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+#profile-page .user-info p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+#profile-page .edit-header {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  border-top: coral solid 1px;
+
+  font-weight: 300;
+  font-size: 2rem;
+}

@@ -1,0 +1,29 @@
+{% extends 'users/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div id="profile-page" class="container">
+  <div id="profile-header">
+    <h1>{{viewed_user.username}}</h1>
+  </div>
+
+  <div class="user-info">
+    <p>Born: Some time in the past</p>
+    <p>Age: Just calculate from birth date lmao</p>
+    <p>Height: That's creepy to know</p>
+  </div>
+
+  {% if user == viewed_user %}
+  <form action="#" method="POST" class="form-minor">
+    <div class="edit-header">
+      Edit Your Information
+    </div>
+    {% csrf_token %}
+    {{ form.as_div}}
+    <button class="btn btn-primary" type="submit">Change</button>
+  </form>
+  {% endif %}
+</div>
+
+{% endblock %}
