@@ -26,9 +26,9 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+# Enter your website url here
 ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1'
+    'krzyzan.xyz'
 ]
 CSRF_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = True
