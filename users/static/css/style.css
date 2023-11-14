@@ -61,6 +61,11 @@ a {
   font-size: 1.3rem;
 }
 
+.form-minor label {
+  display: inline-block;
+  margin-top: 5px;
+}
+
 .form-minor input {
   display: block;
   margin-top: 5px;
@@ -82,6 +87,11 @@ a {
   list-style: none;
   font-size: 1rem;
   color: #f24c4c;
+}
+
+.form-minor .errorlist li {
+  display: inline-block;
+  margin: 5px 0px;
 }
 
 .form-major {
@@ -107,14 +117,21 @@ a {
   margin-bottom: 5px;
 }
 
+.form-major label {
+  font-size: 25px;
+  margin: 10px 0px;
+  display: inline-block;
+}
+
 .form-major input {
   display: block;
-  padding: 7px 5px;
+  padding: 15px 10px;
   min-width: 400px;
   background: #222;
   border: #666 solid 1px;
   border-radius: 5px;
   color: #fff;
+  font-size: 20px;
 }
 
 .form-major input:focus {
@@ -122,20 +139,26 @@ a {
   outline: none;
 }
 
-.form-major ul {
-  list-style: none;
-  font-size: 0.8rem;
-}
 
 .form-major .errorlist {
   color: #f24c4c;
   font-size: 0.8rem;
+  max-width: 100;
+  list-style: none;
+  display: inline-block;
+  max-width: 400px;
 }
 
+.form-major .errorlist li {
+  margin-top: 8px;
+  display: inline-block;
+}
 
 .form-major .btn {
   margin-top: 30px;
   border-radius: 4px;
+  font-size: 25px;
+  font-weight: 700;
   width: 100%;
 }
 

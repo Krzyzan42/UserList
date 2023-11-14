@@ -20,7 +20,7 @@
       Edit Your Information
     </div>
     {% csrf_token %}
-    {{ form.as_div}}
+    {% include 'users/form.html' %}
     <button class="btn btn-primary" type="submit">Change</button>
   </form>
   {% endif %}
