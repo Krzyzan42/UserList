@@ -1,14 +1,12 @@
 {% extends 'users/base.html' %}
 
-{% load crispy_forms_tags %}
-
 {% block content %}
 <div class="container center">
 
   <form class="form-major center" action="#" method="post">
     <h1>Register</h1>
     {% csrf_token %}
-    {{ form|crispy }}
+    {% include 'users/form.html' %}
     <br>
     <button type="submit" class="btn btn-primary">Register</button>
   </form>
